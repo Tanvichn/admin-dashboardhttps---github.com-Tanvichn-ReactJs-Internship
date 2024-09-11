@@ -2,7 +2,7 @@ import React from 'react';
 
 function Sidebar() {
   return (
-    <div className='w-64 p-5 pt-10 pl-10'>
+    <div className='w-64 p-5 pt-10 '>
       <div className="w-max h-3/4 p-6 pt-3 shadow-md bg-gradient-to-r from-blue-50 to-purple-100 rounded-lg flex flex-col justify-between">
         <div>
           <div className="flex justify-between items-center mb-5">
