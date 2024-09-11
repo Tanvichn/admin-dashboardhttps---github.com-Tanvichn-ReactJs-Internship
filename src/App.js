@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import NavBar from './components/Header';
+import Sidebar from './components/Sidebar';
+import MainContent from './components/MainContent';
+import Footer from './components/Footer';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    
+    <div className="bg-gradient-to-r from-blue-200  to-pink-200 min-h-screen flex flex-col ">
+       <div className="flex items-center">
+      <img
+        src="./media/logo.png"  
+        alt="Scanalyst Logo"
+        className="w-8 h-8 mr-3"
+      />
+      <h1 className="font-bold text-lg text-gray-800">Scanalyst</h1>
+     </div>
+      <NavBar /> 
+      <div className="flex flex-1">
+        <Sidebar />
+        <MainContent />
+      </div>
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;
